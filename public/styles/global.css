@@ -1,0 +1,58 @@
+body {
+    background-color: black;
+    color: rgb(214, 170, 170);
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    padding: 2%;
+    font-size: 1.5rem;
+    margin-top: 10px;
+    width: 100vw;
+    border: 1px solid white;
+    flex-grow: 1;
+}
+
+.navbar a {
+    color: white;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+}
+
+body.gods {
+    background-color: steelblue;
+}
+
+body.heroes {
+    background-color: slateblue;
+}
+
+.header-title-container {
+    flex-grow: 1;
+    text-align: center;
+    color: white;
+}
+
+.header-title {
+    font-size: 3rem;
+}
+
+@media screen and (max-width:768px) {
+    .header {
+        display: block;
+    }
+
+    .header-img {
+        display: block;
+        margin: auto;
+    }
+}
