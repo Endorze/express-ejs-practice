@@ -15,6 +15,10 @@ body {
     flex-grow: 1;
 }
 
+.underline {
+    text-decoration: underline;
+}
+
 .navbar a {
     color: white;
 }

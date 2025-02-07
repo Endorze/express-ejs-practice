@@ -1,0 +1,9 @@
+<% if (locals.godName) { %>
+    <% if (godName === "zeus") { %>
+        <%- include("./zeus") %>
+    <% } else if (godName === "hera") { %>
+        <%- include("./hera") %>
+    <% } else { %>
+        <p>No hero found</p>
+    <% } %>
+<% } %>

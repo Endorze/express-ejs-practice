@@ -10,6 +10,7 @@ app.set("view engine", "ejs");
 
 app.get("/", (req, res) => {
     res.render("pages/home", {
+        pageType: "home",
         headTitle: "Greek Mythology",
         title: "Welcome to the Olympus",
         subtitles: "Learn about the different gods and their weaknesses!"

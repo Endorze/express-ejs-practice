@@ -4,6 +4,7 @@ const godRouter = express.Router();
 
 godRouter.get("/", (req, res) => {
     res.render("pages/featurePage", {
+        pageType: "gods",
         bodyClass: "gods",
         headTitle: "Greek Mythology",
         title: "Welcome heroes! This is where men are made to men",
@@ -12,11 +13,25 @@ godRouter.get("/", (req, res) => {
 })
 
 godRouter.get("/zeus", (req, res) => {
-    res.send("Yassou from the Zeus's page!");
+    res.render("pages/featurePage", {
+        godName: "zeus",
+        pageType: "gods",
+        bodyClass: "gods",
+        headTitle: "Greek Mythology",
+        title: "Welcome heroes! This is where men are made to men",
+        subtitles: "Fight a tiger today!",
+    })
 })
 
 godRouter.get("/hera", (req, res) => {
-    res.send("Yassou from the Hera's page!");
+    res.render("pages/featurePage", {
+        godName: "hera",
+        pageType: "gods",
+        bodyClass: "gods",
+        headTitle: "Greek Mythology",
+        title: "Welcome heroes! This is where men are made to men",
+        subtitles: "Fight a tiger today!",
+    })
 })
 
 export default godRouter;

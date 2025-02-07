@@ -1,0 +1,21 @@
+<% if (locals.pageType) { 
+    if (pageType==="heroes" ) { %>
+    <div>
+        <h3>Welcome to the heroes page</h3p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum nulla tenetur officia error
+        consequuntur, sint cumque ratione. Dolorem expedita animi eveniet tempore sapiente, ex adipisci pariatur
+        aliquam, consequuntur sit molestias!</p>
+    </div>
+    <% } else if (pageType === "gods") { %>
+        <div>
+            <h3>Welcome to the gods page</h3p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum nulla tenetur officia error
+            consequuntur, sint cumque ratione. Dolorem expedita animi eveniet tempore sapiente, ex adipisci pariatur
+            aliquam, consequuntur sit molestias!</p>
+        </div>
+    <% } else { %>
+            <h3>You seem to be at the homepage</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt minus, tempora aliquid quae praesentium, 
+            iure atque facere impedit, perferendis architecto quibusdam saepe. Placeat quaerat iure, culpa autem maiores ipsa quia!</p>
+    <% } %>
+<% } %>
